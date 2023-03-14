@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url(common.css);
+
+[class $= "inner"] {
+  width: 100%;
+}
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(255,255,255,0.9);
+  overflow: visible;
+}
+#header .logo {
+  float: none;
+  text-align: center;
+  font-size: 28px;
+}
+#header .gnb {
+  float: none;
+  margin: 0;
+  width: auto;
+  background: rgba(0,0,0,0.7);
+  padding-bottom: 100px;
+  display: none; /*javascript에서 처리예정*/
+  /*가시성
+  opacity(불투명 0->100),visibilty(숨김)==> 보이지 않아도 남아있음
+  display:none ==> 없다!!!
+  */
+}
+#header .gnb a {
+  float: none;
+  width: auto;
+  line-height: 5;
+  color: #fff;
+}
+#header .gnb a:after {
+  display: none;
+}
+#header .gnb a:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+#header .menu-btn {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 20px;
+  background: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  /*none 했던거를 나타내는 것은 block*/
+}
+#header .menu-btn .fa-bars {display: block;}
+#header .menu-btn .fa-times {display: none;}
+/*
+div .inner {}
+=> div안에 있는 후손 요소 중에서 클래스이름이 "inner"인 요소 선택
+
+div.inner {}
+=> div 요소들 중에서 클래스이름이 "inner"인 요소 선택
+*/
+/*jQuery 처리용 스타일*/
+#header .gnb.on {display: block;}
+#header .menu-btn.active .fa-bars {display: none;}
+#header .menu-btn.active .fa-times {display: block;}
+
+#header .sns {display: none;}
+/*visual*/
+#visual {
+  height: 85vh;
+}
+#visual h2 {
+font-size: 12vw; /*viewport width 1vw==> 1%(글자 1개의 폭)*/
+  margin-bottom: 10px;
+}
+#visual h2 + p {
+  font-size: 5vw;
+}
+/*본문텍스트*/
+#main [class ^= "text"] {
+  padding: 40px 0;
+  font-size: 3.2vw; 
+}
+/*본문 섹션*/
+#main [class $= "inner"] {
+  padding: 50px 0
+}
+#main h2 {
+  font-size: 10vw;
+}
+#main h2 + p {
+  font-size: 4vw;
+}
+#main .list {
+  margin-top: 30px;
+  padding: 0 5vw
+}
+
+#main .list li:nth-child(n),
+#main .list article:nth-child(n) {
+  margin: 0;
+  float: none;
+  width: 100%;
+}
+#main .list li:not(:last-child),
+#main .list article:not(:last-child) {
+  margin-bottom: 50px;
+}
+#skill .list li:nth-child(n) {
+  height: auto;
+  padding-bottom: 20px;
+}
+#skill .list li:nth-child(2n) {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+
+#news .list article:not(:last-child) {
+  margin-bottom: 100px;
+}
+#news .list .desc {display: none;}
+
+
+
+
+
+
+
+

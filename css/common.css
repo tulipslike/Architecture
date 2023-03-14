@@ -1,0 +1,442 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(font.css);
+@import url(all.min.css);
+
+/*콘텐츠 사이즈 1200*/
+[class $= "inner"] {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+#header {
+  position: relative;
+  z-index: 1;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  
+  transition: all 0.5s;
+  overflow: hidden
+}
+
+#visual {
+  height: 800px;
+  background: url(../img/main02.png) no-repeat center / cover;
+  
+  transition: all 0.5s
+}
+
+/*header*/
+#header {
+  color: #333
+}
+#header .logo {
+  float: left;
+ }
+#header .gnb {
+  float: left;
+  width: 800px;
+  margin-left: 70px;
+}
+#header .gnb a {
+  display: block;
+  float: left;
+  width: 16.6666%;
+  box-sizing: border-box;
+  text-align: center;/*인라인요소-이미지,글자*/
+  font-size: large;
+  position: relative;
+  transition: all 0.2s
+}
+#header .gnb a:after {
+  position: absolute;
+  left: 0%;
+  bottom: 0px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0px;
+  background: #0af;
+  transition: all 0.2s
+}
+#header .gnb a:hover:after {
+  height: 5px;
+}
+#header .gnb a:hover {
+  color: #0af;
+}
+
+#header .sns {
+  float: right
+}
+#header .sns a {
+  font-size: 25px;
+  padding: 0 2px;
+  opacity: 0.7
+}
+#header .sns a:hover {
+  opacity: 1
+}
+
+#header .menu-btn {display: none;}
+
+/*비주얼 */
+#visual {}
+#visual .visual-inner {
+  position: relative
+}
+#visual .title-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+/*
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+  height: 250px;
+  margin: auto;
+*/
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.5)
+/*  text-shadow: 25px 25px 10px rgba(0,0,0,0.3)*/
+}
+#visual h2 {
+  font-size: 100px;
+  line-height: 1
+}
+#visual h2 + p {
+  font-size: 30px;
+  line-height: 1.5;
+  font-style: italic
+}
+
+/*footer*/
+#footer {
+  background: #eee;
+  text-align: center;
+}
+#footer .footer-top {
+  padding: 100px 0
+}
+#footer .footer-top p {
+  font-size: large;
+  color: #333
+}
+#footer .today-btn {
+  margin-top: 30px;
+}
+#footer .today-btn a {
+  display: inline-block;
+  background: #333;
+  color: #eee;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5)
+}
+#footer .today-btn a:hover {
+  background: #059
+}
+#footer .footer-bottom {
+  background: #555;
+  height: 50px;
+  line-height: 50px;
+  font-size: small;
+  color: #fff;
+  letter-spacing: 0.5px
+}
+#footer .footer-bottom a {
+  color: #0af
+}
+#footer .footer-bottom a:hover {
+  text-decoration: underline
+}
+
+/*본문 - 텍스트*/
+#main [class ^= "text"] {
+  text-align: center;
+  padding: 80px 0;
+  font-size: large;
+  line-height: 2;
+  color: #333
+}
+#main .text-bottom {
+  background: url(../img/search02.png) no-repeat fixed center / cover;
+  color: #fff;
+  text-shadow: 1px 1px 1px #111
+}
+#main .text-bottom em {
+  display: inline-block;
+  margin-top: 20px
+}
+
+/*본문 - 섹션 공통 스타일*/
+#main [class $= "inner"] {
+  padding: 100px 0;
+  color: #222;
+}
+#main h2 {
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 10px 10px 15px rgba(0,0,0,0.3)
+}
+#main h2:before {
+  content: "recent ";
+  color: #059;
+  font-size: 70%;
+  margin-right: 10px
+}
+#main h2 + p {
+  text-align: center;
+  font-size: large;
+  line-height: 1.6
+}
+#main .list {
+  margin-top: 50px
+}
+
+/*work*/
+#work {
+  background: #eee
+}
+#work .list li {
+  float: left;
+  width: 31%;/*100%를 3개로 나누기*/
+}
+#work .list li:not(:last-child) {
+  margin-right: 3.5%;
+  /*반드시 여백먼저 정한 후 => width */
+}
+#work .list img {
+  display: block;
+  width: 100%;
+  filter: brightness(0.5);
+  transition: all 0.3s
+}
+#work .list a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s
+}
+#work .list a:hover {
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.2)
+}
+#work .list a:hover img {
+  transform: scale(1.1);
+  filter: none;
+}
+
+/*본문 스킬*/
+#skill .list li {
+  float: left;
+  width: 33.3333%;
+  height: 200px;
+  background: no-repeat center 10px / 80px auto;
+  padding-top: 120px;
+  transition: all 0.3s;
+  cursor: cell
+}
+#skill .list li:hover {
+  background-position: center 20px
+}
+#skill h3 {
+  text-align: center;
+  font-size: 25px;
+  color: #0af;
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+  margin-bottom: 20px
+}
+#skill h3 + p {
+/*  text-align: justify*/
+  font-size: small;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  padding: 0 30px;
+  text-indent: 10px
+}
+/*1 2 3 리스트만 선택해서 여백 주기!!*/
+#skill .list li:nth-child(-n+3) {
+   margin-bottom: 40px
+} 
+
+/*여백 2% 줄 경우? (3, 6번째 요소 빼고 마진 주기)*/
+/*
+#skill .list li {
+  width: 32%
+}
+#skill .list li:not(:nth-child(3n)) {
+  margin-right: 2%
+}
+*/
+
+#skill .list li:nth-child(1) {
+  background-image: url(../img/ico_code.png)
+}
+#skill .list li:nth-child(2) {
+  background-image: url(../img/ico_option.png);
+}
+#skill .list li:nth-child(3) {
+  background-image: url(../img/ico_setting.png)
+}
+#skill .list li:nth-child(4) {
+  background-image: url(../img/ico_support.png)
+}
+#skill .list li:nth-child(5) {
+  background-image: url(../img/ico_tools.png)
+}
+#skill .list li:nth-child(6) {
+  background-image: url(../img/ico_transper.png)
+}
+
+/*본문 뉴스*/
+#news .list article {
+  float: left;
+  width: 31.3333%;
+  text-align: right
+}
+#news .list article:not(:last-child) {
+  margin-right: 3%
+}
+
+#news .list .thumb {
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+#news .list .thumb img {
+  display: block;
+  width: 100%;
+  border-radius: 3px
+}
+#news h3 {
+  margin-bottom: 5px
+}
+#news .date {
+  margin-bottom: 10px;
+  font-size: small
+}
+#news .desc {
+  font-size: 80%;
+  line-height: 1.6
+}
+
+#news .detail-btn {
+  margin-top: 30px;
+  text-align: center;
+}
+#news .detail-btn button {
+  display: block;
+  width: 100%;/*버튼요소만 작성해야 함!!*/
+  padding: 10px 30px;
+  background: #ddd;
+  transition: all 0.3s;
+  border-radius: 5px;
+  cursor: pointer
+}
+#news .detail-btn button:hover {
+  background: #0af;
+  color: #fff
+}
+
+/*Tablet 641~1280*/
+@media screen 
+  and (max-width: 1280px) 
+  and (min-width: 641px) {
+  
+    [class $= "inner"] {
+      width: 92%
+    }
+    
+    #header {
+      height: 120px;
+    }
+    #header .logo {
+      float: none;
+      line-height: 70px;
+      text-align: center;
+    }
+    #header .gnb {
+      float: none;
+      margin: 0;
+      width: 100%;
+      line-height: 50px
+    }
+    #header .sns {display: none;}
+    
+    #visual {
+      height: 600px
+    }
+    #visual h2 {
+      font-size: 70px
+    }
+    #visual h2 + p {
+      font-size: 25px
+    }
+ 
+    #main [class $= "inner"] {
+      padding: 70px 0
+    }
+    
+    #skill .list li:nth-child(n) {
+      margin: 0;
+      width: 48.5%;
+      height: auto;
+      background-position: center 20px
+    }
+    #skill .list li:hover {
+      background-position: center 30px
+    }
+    #skill .list li:not(:nth-child(2n)) {
+      margin-right: 3%
+    }
+    #skill .list li:not(:nth-child(n+5)) {
+      margin-bottom: 40px
+    }
+    #skill .list li:nth-child(3),
+    #skill .list li:nth-child(4) {
+      background-color: #eee;
+      border-radius: 5px
+    }
+    
+}
+
+
+
+
+
+/*작업용-삭제!!!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

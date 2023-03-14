@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<!--  반드시 작성! 반응형 동작-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture</title>
+  <link rel="stylesheet" href="css/common.css">
+<!--  모바일 화면에서만 동작하는 스타일-->
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 640px)">
+<!--  javascript-->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/menu.js"></script>
+
+
+</head>
+<body>
+  <div id="all-wrap">
+   
+    <header id="header">
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="/">Architecture</a>
+        </h1>
+        <nav class="gnb">
+          <a href="/">HOME</a>
+          <a href="javascript:;">PORT</a>
+          <a href="#work">WORK</a>
+          <a href="#skill">SKILL</a>
+          <a href="#news">NEWS</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+        <div class="sns">
+          <a href="javascript:;" title="twitter"><i class="fab fa-twitter-square"></i></a>
+          <a href="javascript:;" title="facebook"><i class="fab fa-facebook-square"></i></a>
+          <a href="javascript:;" title="instagram"><i class="fab fa-instagram-square"></i></a>
+          <a href="javascript:;" title="youtube"><i class="fab fa-youtube-square"></i></a>
+        </div>
+<!--        모바일 메뉴-->
+        <button class="menu-btn">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </header>
+    
+    <div id="visual">
+      <div class="visual-inner">
+        <div class="title-box">
+          <h2 class="title">Welcome</h2>
+          <p>
+            You can make anything width Total. <br>
+            Even this page.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <main id="main">
+      <div class="text-top">
+        <p>
+          Welcome to architecture. We are an innovative and creative <br>
+          agency that makes things. Keep reading to learn about what <br>
+          We can do for your business.
+        </p>
+      </div>
+      
+      <section id="work">
+        <div class="work-inner">
+          <h2 class="title">Work</h2>
+          <p>
+            We are creative makeing incredible things. <br> Have a look at some of your latest work below.
+          </p>
+          <ul class="list clearfix">
+            <li>
+              <a href="javascript:;" title="프로젝트 바로가기">
+                <img src="img/project01.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" title="프로젝트 바로가기">
+                <img src="img/project02.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;" title="프로젝트 바로가기">
+                <img src="img/project03.png" alt="">
+              </a>
+            </li>
+<!--
+            <li>
+              <a href="javascript:;" title="프로젝트 바로가기">
+                <img src="img/project04.png" alt="">
+              </a>
+            </li>
+-->
+          </ul>
+        </div>
+      </section>
+      
+      <section id="skill">
+        <div class="skill-inner">
+          <h2 class="title">Skill</h2>
+          <ul class="list clearfix">
+            <li>
+              <h3>Code</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, illum, sit. Nam blanditiis enim voluptatem non id saepe eligendi quia asperiores. Modi magnam repellat suscipit, ducimus quibusdam dicta laboriosam tempore.
+              </p>
+            </li>
+            <li>
+              <h3>Option</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, harum. Tempore quis, non sint officiis laborum cupiditate facilis sed voluptate quos ducimus quisquam hic aspernatur doloremque sunt ipsum architecto tempora? aspernatur doloremque sunt ipsum architecto tempora?
+              </p>
+            </li>
+            <li>
+              <h3>Setting</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quas quo ducimus debitis, voluptatum quasi ab nesciunt. Non necessitatibus, fugiat debitis quasi, dignissimos voluptates excepturi veniam tenetur deserunt, dolor ex!
+              </p>
+            </li>
+            <li>
+              <h3>Support</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, est. Esse magnam error, non, expedita ducimus voluptatibus. Magni laborum incidunt omnis, error, dolore vero aspernatur doloribus, porro voluptate optio saepe.
+              </p>
+            </li>
+            <li>
+              <h3>Tools</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nisi minima magnam aliquid, rem ratione delectus impedit beatae dicta quia repellat iure totam, perspiciatis officiis labore eum architecto laboriosam error.
+              </p>
+            </li>
+            <li>
+              <h3>Transper</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consectetur quae molestias sint omnis necessitatibus, nulla, error quisquam possimus, nisi dignissimos aliquam! Qui ullam, est facere ipsam quaerat ratione id?
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <div class="text-bottom">
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+          Illo soluta quibusdam placeat, vel laboriosam nihil consectetur. <br>
+          <em>-Vince Lombardi</em>
+        </blockquote>
+      </div>
+      
+      <section id="news">
+        <div class="news-inner">
+          <h2 class="title">News</h2>
+          <p>
+            Have a look at day in the life of architecture <br> and keep up with current events.
+          </p>
+          <div class="list clearfix">
+            <article>
+              <div class="thumb">
+                <img src="img/news01.png" alt="">
+              </div>
+              <h3>Just a Day, An Ordinary Day</h3>
+              <p class="date"><i>January 16, 2017</i></p>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aliquid distinctio harum libero commodi odio, consequuntur alias vero iusto, hic impedit! Maiores tempora molestiae enim repellat iste animi, unde sint.
+              </p>
+              <div class="detail-btn">
+                <button>MORE</button>
+              </div>
+            </article>
+            <article>
+              <div class="thumb">
+                <img src="img/news02.png" alt="">
+              </div>
+              <h3>Just a Day, An Ordinary Day</h3>
+              <p class="date"><i>January 16, 2017</i></p>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aliquid distinctio harum libero commodi odio, consequuntur alias vero iusto, hic impedit! Maiores tempora molestiae enim repellat iste animi, unde sint.
+              </p>
+              <div class="detail-btn">
+                <button>MORE</button>
+              </div>
+            </article>
+            <article>
+              <div class="thumb">
+                <img src="img/news03.png" alt="">
+              </div>
+              <h3>Just a Day, An Ordinary Day</h3>
+              <p class="date"><i>January 16, 2017</i></p>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aliquid distinctio harum libero commodi odio, consequuntur alias vero iusto, hic impedit! Maiores tempora molestiae enim repellat iste animi, unde sint.
+              </p>
+              <div class="detail-btn">
+                <button>MORE</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="text-box">
+          <p>
+            Get Total today to make your own site like this. Just do it.
+          </p>
+          <div class="today-btn">
+            <a href="javascript:;">
+              get Total today
+            </a>
+          </div>
+        </div>
+      </div>
+      <address class="footer-bottom">
+        &copy; Copyright <a href="/">Total Architecture Corp.</a>
+      </address>
+    </footer>
+    
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
